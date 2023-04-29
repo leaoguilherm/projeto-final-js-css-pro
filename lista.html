@@ -22,20 +22,22 @@
             <header class="conteiner__cabecalho">
                 <h2>Lista de Livros</h2>
 
-                <input type="text" name="" id="buscar" placeholder="Buscar">
+                <div class="conteiner__inputs">
+                    <input class="input__text" type="text" name="" id="buscar" placeholder="Buscar">
 
-                <div>
-                    <input type="radio" name="opcao" id="idTodos" value="todos">
-                    <label for="descricao">Todos |</label>
+                    <div>
+                        <input type="radio" name="opcao" id="idTodos" value="todos" checked>
+                        <label for="descricao">Todos |</label>
 
-                    <input type="radio" name="opcao" id="idLivro" value="id">
-                    <label for="Id">Id |</label>
+                        <input type="radio" name="opcao" id="idLivro" value="id">
+                        <label for="Id">Id |</label>
 
-                    <input type="radio" name="opcao" id="idTitle" value="titulo">
-                    <label for="titulo">Título |</label>
+                        <input type="radio" name="opcao" id="idTitle" value="titulo">
+                        <label for="titulo">Título |</label>
 
-                    <input type="radio" name="opcao" id="idDescription" value="descricao">
-                    <label for="descricao">Descrição</label>
+                        <input type="radio" name="opcao" id="idDescription" value="descricao">
+                        <label for="descricao">Descrição</label>
+                    </div>
                 </div>
             </header>
             <div class="conteiner__tabela">

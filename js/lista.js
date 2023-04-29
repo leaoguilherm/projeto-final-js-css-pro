@@ -118,6 +118,5 @@ function buscarNaTabela(array) {
             }
         }
     }
-
 }
 
