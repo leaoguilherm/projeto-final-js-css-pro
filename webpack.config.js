@@ -9,7 +9,10 @@ module.exports = {
         static: path.join(__dirname, './'), // Abrindo o arquivo index.html da raiz
         port: 3000 // Disponibilizando a porta 300 da nossa máquina para o servidor NodeJS
     },
-    entry: path.resolve(__dirname, './', './js/', 'main.js'), // Arquivo que o webpack vai iniciar a ler
+    entry: {
+        main: path.resolve(__dirname, './', './js/', 'main.js'), // Arquivo que o webpack vai iniciar a ler
+        lista: path.resolve(__dirname, './', './js/', 'lista.js'), // Arquivo que o webpack vai iniciar a ler
+    },
     output: { // Pasta e arquivo que será enviada a compilação do seu projeto em uma build
         filename: '[name]-[hash].js',
         path: path.resolve(__dirname, 'dist')
@@ -43,7 +46,17 @@ module.exports = {
     plugins: [
         // Plugin para injetar o bundle no arquivo HTML
         new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, "./", 'index.html')
+            template: 'index.html',
+            filename: 'index.html',
+            chunks: ['main']
         }),
+
+        // Plugin para injetar o bundle no arquivo HTML em outra página.
+         new HTMLWebpackPlugin({
+            template: 'lista.html',
+            filename: 'lista.html',
+            chunks: ['lista']
+        }),
+
     ]
 }

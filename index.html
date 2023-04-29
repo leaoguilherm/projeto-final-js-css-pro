@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Página do Gerente</h1>
+        <nav class="cabecalho__menu">
+            <a href="./index.html">Gerencia</a>
+            <a href="./lista.html">Lista</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="form-cadastro">
+            <header class="form-cadastro__cabecalho">
+                <h2 class="form-cadastro__titulo">Novo Livro</h2>
+            </header>
+            <div class="form-cadastro__entrada">
+                <input class="" type="text" name="" id="idTitle" placeholder="Título">
+                <input class="" type="text" name="" id="idDescription" placeholder="Descrição">
+                <button id="buttonCadastrar">Cadastrar</button>
+            </div>
+            <footer id="conteinerRetorno" class="form-cadastro__saida">
+                    <div id="retornoStatus" class="saida">SUCESSO!</div> 
+            </footer>
+        </div>
+    </main>
 </body>
+
 </html>

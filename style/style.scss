@@ -1,0 +1,116 @@
+@import '_cores';
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $verde;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px 0px 30px;
+
+    &__titulo {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 5px;
+
+        a {
+            padding: 15px 15px 15px 15px;
+            background-color: $roxo;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        a:hover {
+            background-color: $roxo-hover;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.form-cadastro {
+    background-color: $cinza-claro;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 15px 25px;
+    gap: 10px;
+    border: solid $cinza-medio;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    &__titulo {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    &__entrada {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: solid $cinza-medio;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: $cinza-escuro;
+            color: white;
+            border: none;
+        }
+    }
+
+    .saida {
+        padding: 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        background-color: $sucesso;
+        color: white;
+        border: none;
+        text-align: center;
+        display: none;     
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+}
