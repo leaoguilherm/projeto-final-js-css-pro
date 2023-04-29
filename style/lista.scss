@@ -122,6 +122,7 @@ body {
 @media screen and (max-width: 519px) {
     .cabecalho {
         flex-direction: column;
+        padding: 0px;
     }
 
     .conteiner__lista {
