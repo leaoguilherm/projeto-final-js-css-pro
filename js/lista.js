@@ -83,7 +83,7 @@ function buscarNaTabela(array) {
             const linhaArray = array[index]
             const textoLinha = linhaArray.id
 
-            if (textoLinha.includes(valueInput)) {
+            if (textoLinha.toLowerCase().includes(valueInput.toLowerCase())) {
                 linhaAtual.style.display = ""
             } else {
                 linhaAtual.style.display = "none"
@@ -97,7 +97,7 @@ function buscarNaTabela(array) {
             const linhaArray = array[index]
             const textoLinha = linhaArray.title
 
-            if (textoLinha.includes(valueInput)) {
+            if (textoLinha.toLowerCase().includes(valueInput.toLowerCase())) {
                 linhaAtual.style.display = ""
             } else {
                 linhaAtual.style.display = "none"
@@ -111,7 +111,7 @@ function buscarNaTabela(array) {
             const linhaArray = array[index]
             const textoLinha = linhaArray.description
 
-            if (textoLinha.includes(valueInput)) {
+            if (textoLinha.toLowerCase().includes(valueInput.toLowerCase())) {
                 linhaAtual.style.display = ""
             } else {
                 linhaAtual.style.display = "none"
