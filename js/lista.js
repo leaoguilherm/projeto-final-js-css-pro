@@ -69,7 +69,7 @@ function buscarNaTabela(array) {
             const linhaAtual = linhas[index]
             const textoLinha = linhaAtual.innerText
 
-            if (textoLinha.includes(valueInput)) {
+            if (textoLinha.toLowerCase().includes(valueInput.toLowerCase())) {
                 linhaAtual.style.display = ""
             } else {
                 linhaAtual.style.display = "none"
@@ -83,7 +83,7 @@ function buscarNaTabela(array) {
             const linhaArray = array[index]
             const textoLinha = linhaArray.id
 
-            if (textoLinha.toLowerCase().includes(valueInput.toLowerCase())) {
+            if (textoLinha.includes(valueInput)) {
                 linhaAtual.style.display = ""
             } else {
                 linhaAtual.style.display = "none"
